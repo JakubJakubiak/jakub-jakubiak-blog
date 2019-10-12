@@ -12,9 +12,9 @@ const DesignTemplate = ({pageContext: {data} })=>(
       <h1>{data.title}</h1>
       <h2>{data.slug}</h2>
       <p>{data.description}</p>
-     
-      <Link className="link" to={data.link}> {data.link}  </Link>
-      
+      <div>{data.div}</div>
+      <p><a className="link" href={data.link}>{data.link}</a></p>
+
       <Link className="link" to="/"> Wróć do głownej  </Link>
 </div>
     

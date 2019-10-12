@@ -41,6 +41,7 @@ export const allBlogPagesQuery = graphql`
         image
         slug
         link
+        div
       }
     }
   }
