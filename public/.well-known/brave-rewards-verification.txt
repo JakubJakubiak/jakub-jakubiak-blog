@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jakub-jakubiak.netlify.com
+Token: b1fc2cd7562f70b6b32a5f42ad8b5946ad8d80c3df4c8a306a9f54d1c5a08950
