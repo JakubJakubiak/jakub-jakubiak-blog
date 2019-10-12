@@ -1,21 +1,50 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "../components/index.css"
 
-const IndexPage = () => (
+
+const IndexPage = ({
+  data:{
+    blog: { designsConnection: {edges} },
+}}) =>(
+ 
   <Layout>
+
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+   
+      <Image/>
+      <div className="centerAll blog-wtraper">
+      
+      {edges.map(page =>(
+        <Link className="link blog-touch" key={page.node.slug} to={page.node.slug}>
+        <img className="img-blok" src= {page.node.image}/>
+         <p> {page.node.title}</p>
+        </Link>
+      ))}
+      </div>
   </Layout>
 )
+
+export const allBlogPagesQuery = graphql`
+{
+  blog{
+  designsConnection {
+    edges {
+      node {
+        status
+        id
+        title
+        description
+        image
+        slug
+      }
+    }
+  }
+}
+}
+`;
 
 export default IndexPage
