@@ -40,6 +40,7 @@ export const allBlogPagesQuery = graphql`
         description
         image
         slug
+        link
       }
     }
   }

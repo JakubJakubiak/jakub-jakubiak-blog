@@ -59,6 +59,7 @@ footer{
 .img-blok{
   text-align: center;
   width: 100vh;
+  max-height:200px;
  
 }
 

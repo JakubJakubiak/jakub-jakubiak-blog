@@ -18,6 +18,7 @@ exports.createPages = async ({ graphql, actions }) =>
             description
             image
             slug
+            link
           }
         }
       }
