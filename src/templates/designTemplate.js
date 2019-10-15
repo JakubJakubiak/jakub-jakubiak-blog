@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
+import { render } from "ink"
 
 const DesignTemplate = ({pageContext: {data} })=>(
+
   <Layout>
    <SEO title={data.title} />
   <div className="centerPost">
@@ -16,8 +18,9 @@ const DesignTemplate = ({pageContext: {data} })=>(
 
       <Link className="link" to="/"> Wróć do głownej  </Link>
 </div>
-    
   </Layout>
 )
+
+
 
 export default DesignTemplate
