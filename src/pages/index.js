@@ -22,8 +22,11 @@ const IndexPage = ({
         <Link className="link blog-touch" key={page.node.slug} to={page.node.slug}>
         <img className="img-blok" src= {page.node.image}/>
          <p> {page.node.title}</p>
+          {page.node.description}
+          
         </Link>
       ))}
+      
       </div>
   </Layout>
 )

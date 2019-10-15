@@ -13,7 +13,6 @@ const DesignTemplate = ({pageContext: {data} })=>(
       <img src={data.image}/>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
-      {data.div}
       <p><a className="link linkStyle" href={data.link}>{data.link}</a></p>
 
       <Link className="link" to="/"> Wróć do głownej  </Link>
