@@ -11,8 +11,8 @@ const DesignTemplate = ({pageContext: {data} })=>(
    <SEO title={data.title} />
   <div className="centerPost">
       <img src={data.image}/>
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
+      <h1 className="marginAll">{data.title}</h1>
+      <p className="marginAll">{data.description}</p>
       <p><a className="link linkStyle" href={data.link}>{data.link}</a></p>
 
       <Link className="link" to="/"> Wróć do głownej  </Link>
