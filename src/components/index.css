@@ -72,6 +72,19 @@ footer{
   color: gold;
 }
 
+.linkStyle{
+  display: block;
+  color: black;
+  background: #55555544;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.linkStyle:hover{
+  color: white;
+  background-color: rgba(255,215,0,0.5);
+}
+
 .blog-wtraper{
   padding: 10px;
   display: grid;
@@ -80,11 +93,14 @@ footer{
 }
 
 .blog-touch{
-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-z-index: 100;
-transition: transform .2s;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  z-index: 100;
+  transition: transform .2s;
 }
 
+.blog-touch:hover{
+  box-shadow: 0 5px 10px rgba(255, 187, 0, 0.534);
+}
 
 .blog-touch:hover{
   transform: translate(0px, -20px) scale(1.1);
@@ -93,14 +109,17 @@ transition: transform .2s;
   .blog-wtraper{
     grid-template-columns: repeat(1, 1fr);
   }
+  .full-width-image{
+    height: 200px;
+  }
 
   .centerAll{
     transform: translate(0px, 0px);
-    margin:0;
+    margin:0 5%;
   }
 
   .centerPost {
-    margin:0;
+    margin:0 5%;
   }
 }
 
