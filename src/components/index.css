@@ -61,7 +61,7 @@ footer{
 }
 .full-width-image-post{
   width: 100vw;
-  height: 800px;
+  max-height: 800px;
 }
 
 .img-blok{
