@@ -17,10 +17,9 @@ import "../components/index.css"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "bitcoin-3006247_1280.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "background.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1280,
-
             quality: 100,
             ) {
             ...GatsbyImageSharpFluid

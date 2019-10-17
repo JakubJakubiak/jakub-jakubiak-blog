@@ -14,9 +14,9 @@ const DesignTemplate = ({pageContext: {data} })=>(
       <img className="full-width-image-post" src={data.image}/>
       <h1 className="marginAll">{data.title}</h1>
       <p className="marginAll">{data.description} {data.div}</p> 
-      <p><a className="link linkStyle" href={data.link}>{data.link}</a></p>
+      <div><p><a className="link linkStyle" href={data.link}>{data.link}</a></p></div>
       <Link className="link" to="/"> Wróć do głownej  </Link>
-</div>
+  </div>
   </Layout>
 )
 

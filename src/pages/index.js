@@ -14,17 +14,17 @@ const IndexPage = ({
   <Layout>
 
     <SEO title="Home" />
-   
-      <Image/>
-      <div className="description-wrpaer">Blog i Projekty w jendym miejscu  </div>
+      <div>
+       <Image />
+       <div className="description-wrpaer">Blog i Projekty w jendym miejscu</div>
+      </div>
+
       <div className="centerAll blog-wtraper">
-     
       {edges.map(page =>(
         <Link className="link blog-touch" key={page.node.slug} to={page.node.slug}>
         <img className="img-blok" src= {page.node.image}/>
          <p> {page.node.title}</p>
           {page.node.description}
-          
         </Link>
       ))}
       
