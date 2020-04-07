@@ -16,8 +16,10 @@ const IndexPage = ({
     <SEO title="Home" />
       <div>
        <Image />
-       <div className="description-wrpaer">Blog i Projekty w jendym miejscu</div>
+       <div className="description-wrpaer">Projekty w jendym miejscu</div>
       </div>
+
+      <div className="description"></div>
 
       <div className="centerAll blog-wtraper">
       {edges.map(page =>(

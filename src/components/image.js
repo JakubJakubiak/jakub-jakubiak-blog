@@ -29,7 +29,7 @@ const Image = () => {
     }
   `)
 
-  return <Img className="full-width-image" fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img className="full-width-image full-triangle" fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default Image

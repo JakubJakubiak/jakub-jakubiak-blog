@@ -20,6 +20,7 @@ footer{
     padding-bottom: 20px;
     color: #fff;
     background: #000;
+    
 }
 
 .full-width-image-container{
@@ -40,7 +41,6 @@ footer{
   text-align: center;
   transform: translate(0px, -40px);
   margin: 0 15%;
-
 }
 
 .centerPost{
@@ -49,15 +49,24 @@ footer{
 }
 
 .full-width-image{
-    width: 100vw;
-    height: 400px;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
 }
+
+.full-triangle::after{
+  content: "";
+  border-bottom: 1150px solid #fff;
+  border-left:1350px solid transparent;
+  margin: 0 auto;
+  transform: translate(0vh, 0);
+}
+
 .full-width-image-post{
   width: 100vw;
   max-height: 720px;
@@ -67,7 +76,6 @@ footer{
   text-align: center;
   width: 100vh;
   max-height:200px;
- 
 }
 
 .link{
@@ -99,10 +107,25 @@ footer{
 .linkStyle>a:hover{
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
+.description {
+ width: 47%;
+ height: 10%;
+ text-align: center;
+ letter-spacing: 2px;
+ display: grid;
+ transform: translate(0px, 0%);
+}
+.description::before { 
+  content: "";
+	border-top: 500px solid #000;
+  border-right: 500px solid transparent;
+  transform: translate(0vh, 0vh);
+}
 
 .description-wrpaer{
-  text-indent: 40px; 
+  text-indent: 150px; 
   font-weight: 600;
+  font-size: 30px;
   letter-spacing: 2px;
   padding: 10px;
   display: grid;
@@ -111,23 +134,21 @@ footer{
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   z-index: 100;
   text-align: center;
-  transform: translate(0px, -80px);
-  margin: 0 15%;
-  background: white;
+  transform: translate(40vh, -20vh);
 }
 
-
 .blog-wtraper{
-  padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   letter-spacing: 1px;
   grid-gap: 50px;
+  transform: translate(12vh, -40vh);
 }
 
 .blog-touch{
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   z-index: 100;
+  background-color: #fff;
   transition: transform .2s;
 }
 
@@ -139,14 +160,48 @@ footer{
 .blog-touch:hover{
   transform: translate(0px, -20px) scale(1.1);
 }
-@media(max-width: 600px){
+
+@media(max-width: 1025px){
   .blog-wtraper{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .description-wrpaer{
+    font-size: 30px;
+    box-shadow: 0 0px 0px;
+    width: 60%;
   }
   .full-width-image{
     height: 200px;
   }
+  .description {
+    width: 5%;
+  } 
+  .description::before{
+    border-top: 250px solid #000;
+    border-right: 250px solid transparent;
+  }
 
+@media(max-width: 600px){
+  .blog-wtraper{
+    grid-template-columns: repeat(1, 1fr);
+    transform: null;
+  } 
+  .description-wrpaer{
+    transform: translate(0vw, 0vw);
+    width: 100vw;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    font-size: 20px;
+  }
+  .description {
+    width: 80%;
+    border-left: solid transparent;
+    transform: translate(-1vh, -6vh);
+  }
+  .description::before{
+    width: 5%;
+    border-top: 50px solid #000;
+    border-right: 50px solid transparent;
+  }
   .centerAll{
     transform: translate(0px, 0px);
     margin:0 5%;
@@ -155,6 +210,7 @@ footer{
   .centerPost {
     margin:0 5%;
   }
+}
 }
 
 
