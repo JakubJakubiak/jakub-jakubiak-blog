@@ -164,6 +164,7 @@ footer{
 @media(max-width: 1025px){
   .blog-wtraper{
     grid-template-columns: repeat(2, 1fr);
+    transform: translate(12vh, -20vh);
   }
   .description-wrpaer{
     font-size: 30px;
@@ -195,7 +196,7 @@ footer{
   .description {
     width: 80%;
     border-left: solid transparent;
-    transform: translate(-1vh, -6vh);
+    transform: translate(-1vh, -6vh); 
   }
   .description::before{
     width: 5%;
