@@ -107,20 +107,6 @@ footer{
 .linkStyle>a:hover{
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-.description {
- width: 47%;
- height: 10%;
- text-align: center;
- letter-spacing: 2px;
- display: grid;
- transform: translate(0px, 0%);
-}
-.description::before { 
-  content: "";
-	border-top: 500px solid #000;
-  border-right: 500px solid transparent;
-  transform: translate(0vh, 0vh);
-}
 
 .description-wrpaer{
   text-indent: 150px; 
@@ -142,7 +128,7 @@ footer{
   grid-template-columns: repeat(3, 1fr);
   letter-spacing: 1px;
   grid-gap: 50px;
-  transform: translate(12vh, -40vh);
+  transform: translate(0vh, 0vh);
 }
 
 .blog-touch{
@@ -164,7 +150,7 @@ footer{
 @media(max-width: 1025px){
   .blog-wtraper{
     grid-template-columns: repeat(2, 1fr);
-    transform: translate(12vh, -20vh);
+    transform: translate(0vh, -2vh); 
   }
   .description-wrpaer{
     font-size: 30px;
@@ -173,13 +159,6 @@ footer{
   }
   .full-width-image{
     height: 200px;
-  }
-  .description {
-    width: 5%;
-  } 
-  .description::before{
-    border-top: 250px solid #000;
-    border-right: 250px solid transparent;
   }
 
 @media(max-width: 600px){
@@ -193,16 +172,6 @@ footer{
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     font-size: 20px;
   }
-  .description {
-    width: 80%;
-    border-left: solid transparent;
-    transform: translate(-1vh, -6vh); 
-  }
-  .description::before{
-    width: 5%;
-    border-top: 50px solid #000;
-    border-right: 50px solid transparent;
-  }
   .centerAll{
     transform: translate(0px, 0px);
     margin:0 5%;
@@ -211,8 +180,4 @@ footer{
   .centerPost {
     margin:0 5%;
   }
-}
-}
-
-
-
+}}

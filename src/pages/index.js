@@ -19,8 +19,6 @@ const IndexPage = ({
        <div className="description-wrpaer">Projekty w jendym miejscu</div>
       </div>
 
-      <div className="description"></div>
-
       <div className="centerAll blog-wtraper">
       {edges.map(page =>(
         <Link className="link blog-touch" key={page.node.slug} to={page.node.slug}>
